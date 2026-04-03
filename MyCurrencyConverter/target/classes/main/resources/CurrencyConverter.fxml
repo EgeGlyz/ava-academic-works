@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.mycurrencyconverter.CurrencyConverterCtrl"
+      spacing="10" alignment="CENTER" padding="20">
+
+    <Label text="From"/>
+    <ComboBox fx:id="fromCurrency"/>
+
+    <Label text="To"/>
+    <ComboBox fx:id="toCurrency"/>
+
+    <Label text="Amount"/>
+    <TextField fx:id="amountField"/>
+
+    <Button text="Convert" onAction="#convert" maxWidth="200"/>
+
+    <Label text="Result" fx:id="resultLabel"/>
+
+</VBox>
